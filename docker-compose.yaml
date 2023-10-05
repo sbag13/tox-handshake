@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  tox-node:
+    image: toxrust/tox-node:latest
+    ports:
+      - 33445:33445
+    environment:
+      - TOX_SECRET_KEY=4a2d4098e9d6ae6addb8035085cf1467fd7611edd2e22df2f1b60a71763b4ce4
+    command: --udp-address '0.0.0.0:33445' --tcp-address '0.0.0.0:33445'

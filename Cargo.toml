@@ -1,0 +1,15 @@
+[package]
+name = "tox-handshake"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = { version = "1.0" }
+clap = { version = "4.4.6", features = ["derive"] }
+crypto_box = { version = "0.9" }
+futures = "0.3.28"
+hex = "0.4.3"
+tokio = { version = "1.32", features = ["rt-multi-thread", "net", "macros"] }
+tokio-util = { version = "0.7.9", features = ["codec"] }
